@@ -1,0 +1,87 @@
+﻿Compilación iniciada a las 01/06/2015 8:51:29 p. m..
+     1>Proyecto "D:\Arquitectura\CUDA\ProyectoCUDA\Proyecto\Proyecto.vcxproj" en el nodo 2 (Build destinos).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DWIN64 /D_DEBUG /D_CONSOLE /D_MBCS /ID:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include" /I. /FIcuda_runtime.h /c D:\Arquitectura\CUDA\ProyectoCUDA\Proyecto\kernel.cu 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Sebastian\AppData\Local\Temp\tmp8aafca2e5d7d4b4db1cded971b4ea3a3.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -ID:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o D:\Arquitectura\CUDA\ProyectoCUDA\build\Debug\x64\kernel.cu.obj "D:\Arquitectura\CUDA\ProyectoCUDA\Proyecto\kernel.cu"
+         
+         D:\Arquitectura\CUDA\ProyectoCUDA\Proyecto>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64"  -ID:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o D:\Arquitectura\CUDA\ProyectoCUDA\build\Debug\x64\kernel.cu.obj "D:\Arquitectura\CUDA\ProyectoCUDA\Proyecto\kernel.cu" 
+     1>D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include\opencv2/ml/ml.hpp(955): warning : overloaded virtual function "CvDTree::train" is only partially overridden in class "CvForestTree"
+     1>D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include\opencv2/ml/ml.hpp(1143): warning : overloaded virtual function "CvDTree::train" is only partially overridden in class "CvBoostTree"
+     1>D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include\opencv2/core/affine.hpp(282): warning : controlling expression is constant
+     1>D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include\opencv2/ml/ml.hpp(955): warning : overloaded virtual function "CvDTree::train" is only partially overridden in class "CvForestTree"
+     1>D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\include\opencv2/ml/ml.hpp(1143): warning : overloaded virtual function "CvDTree::train" is only partially overridden in class "CvBoostTree"
+         kernel.cu
+     1>D:/Arquitectura/CUDA/ProyectoCUDA/Proyecto/kernel.cu(117): warning C4244: 'argumento' : conversión de 'float' a 'unsigned int'; posible pérdida de datos
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\Proyecto.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\lib\x64 cudart.lib opencv_calib3d2411d.lib opencv_contrib2411d.lib opencv_core2411d.lib opencv_features2d2411d.lib opencv_flann2411d.lib opencv_gpu2411d.lib opencv_highgui2411d.lib opencv_imgproc2411d.lib opencv_legacy2411d.lib opencv_ml2411d.lib opencv_nonfree2411d.lib opencv_objdetect2411d.lib opencv_ocl2411d.lib opencv_photo2411d.lib opencv_stitching2411d.lib opencv_superres2411d.lib opencv_ts2411d.lib opencv_video2411d.lib opencv_videostab2411d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\Proyecto.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\Proyecto.lib" /MACHINE:X64 D:\Arquitectura\CUDA\ProyectoCUDA\build\Debug\x64\kernel.cu.obj
+         Proyecto.vcxproj -> D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\Proyecto.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart*.dll" "D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart*.dll" "D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\"
+         echo Copying images.
+         xcopy "D:\Arquitectura\CUDA\ProyectoCUDA\images" "D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\images" /s /i /d
+         echo Copying DLLs.
+         xcopy "D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\*.dll" "D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\" /d
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart*.dll" "D:\Arquitectura\CUDA\ProyectoCUDA\bin\Debug\x64\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart32_70.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.0\bin\cudart64_70.dll
+                 2 archivo(s) copiado(s).
+         Copying images.
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img1.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img2.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img3.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img4.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img5.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img6.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img7.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img8.jpg
+         D:\Arquitectura\CUDA\ProyectoCUDA\images\img9.jpg
+         9 archivo(s) copiado(s)
+         Copying DLLs.
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_calib3d2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_calib3d2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_contrib2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_contrib2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_core2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_core2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_features2d2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_features2d2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_ffmpeg2411_64.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_flann2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_flann2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_gpu2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_gpu2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_highgui2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_highgui2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_imgproc2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_imgproc2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_legacy2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_legacy2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_ml2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_ml2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_nonfree2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_nonfree2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_objdetect2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_objdetect2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_ocl2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_ocl2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_photo2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_photo2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_stitching2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_stitching2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_superres2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_superres2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_video2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_video2411d.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_videostab2411.dll
+         D:\Arquitectura\CUDA\ProyectoCUDA\extlibs\bin\x64\opencv_videostab2411d.dll
+         37 archivo(s) copiado(s)
+     1>Compilación del proyecto terminada "D:\Arquitectura\CUDA\ProyectoCUDA\Proyecto\Proyecto.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:39.11
